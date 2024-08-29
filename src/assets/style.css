@@ -1,47 +1,46 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 header .header-app {
-    display: grid;
-    grid-template-columns: 100px 600px 100px;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding: 0.5rem 2rem;
-    border-bottom: 2px solid black;
+  display: grid;
+  grid-template-columns: 100px 600px 100px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem 2rem;
+  border-bottom: 2px solid black;
 }
 
 .navbar ul {
-    display: flex;
-    padding: 0;
-    align-items: center;
-    list-style: none;
-    
+  display: flex;
+  padding: 0;
+  align-items: center;
+  list-style: none;
 }
 
 .navbar ul li {
-    margin-inline: 0.8rem;
+  margin-inline: 0.8rem;
 }
 
 .navbar a {
-    text-decoration: none;
-    padding: 0.5rem 2rem;
-    color: black;
-    font-size: 1.2rem;
-    transition: ease-in-out 0.5s;
-    border-radius: 1.5rem;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  color: black;
+  font-size: 1.2rem;
+  transition: ease-in-out 0.5s;
+  border-radius: 1.5rem;
 }
 
 .navbar a:hover {
-    background-color: #df1a10;
-    border-radius: 1.5rem;
-    color: white;
+  background-color: #df1a10;
+  border-radius: 1.5rem;
+  color: white;
 }
