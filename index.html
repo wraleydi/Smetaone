@@ -21,7 +21,8 @@
           <div class="navbar">
             <ul>
               <li class="navbar-item"><a href="#">Beranda</a></li>
-              <li class="navbar-item" style="font-size: 1.2rem;">Bidang
+              <li class="navbar-item" style="font-size: 1.2rem">
+                Bidang
                 <ul class="navbar-down">
                   <li class="navbar-item">PP</li>
                   <li class="navbar-item">PTD</li>
@@ -39,20 +40,20 @@
       </div>
     </header>
     <script>
-      const navItem = document.querySelectorAll(".navbar-item")
+      const navItem = document.querySelectorAll('.navbar-item');
 
-navItem.forEach((nav) => {
-  const navDown = nav.querySelector(".navbar-down")
+      navItem.forEach((nav) => {
+        const navDown = nav.querySelector('.navbar-down');
 
-  if (navDown) {
-    nav.addEventListener("mouseenter", () => {
-      navDown.classList.add("navbar-expand")
-    });
-    nav.addEventListener("mouseleave", () => {
-      navDown.classList.remove("navbar-expand");
-    })
-  }
-})
+        if (navDown) {
+          nav.addEventListener('mouseenter', () => {
+            navDown.classList.add('navbar-expand');
+          });
+          nav.addEventListener('mouseleave', () => {
+            navDown.classList.remove('navbar-expand');
+          });
+        }
+      });
     </script>
   </body>
 </html>
