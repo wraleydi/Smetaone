@@ -59,19 +59,26 @@ header .header-app {
   box-shadow: 0 0 10px #ec3f35;
 }
 
+.navbar-item {
+  cursor: pointer;
+}
+
 .navbar .navbar-down {
   position: absolute;
   flex-direction: column;
   padding: 1rem;
   border: 1px solid black;
   align-items: start;
+  cursor: pointer;
   display: none;
 }
 
 .navbar-down.navbar-expand {
   display: block;
+  margin: 0;
 }
 
-.navbar .navbar-down li {
+.navbar .navbar-expand li {
   margin: 0;
+  text-align: start;
 }
