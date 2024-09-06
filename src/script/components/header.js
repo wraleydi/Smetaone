@@ -1,15 +1,15 @@
 class HeaderApp extends HTMLElement {
-    constructor() {
-        super()
-        this._shadowRoot = this.attachShadow({ mode:'open' })
-    }
+  constructor() {
+    super();
+    this._shadowRoot = this.attachShadow({ mode: 'open' });
+  }
 
-    connectedCallback() {
-        this.render()
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    render() {
-        this._shadowRoot.innerHTML = `
+  render() {
+    this._shadowRoot.innerHTML = `
         <style>
            header .header-app {
   display: flex;
@@ -159,23 +159,23 @@ class HeaderApp extends HTMLElement {
         </div>
       </div>
     </header>
-        `
+        `;
 
-        const navItem = this._shadowRoot.querySelectorAll('.navbar-item');
+    const navItem = this._shadowRoot.querySelectorAll('.navbar-item');
 
-      navItem.forEach((nav) => {
-        const navDown = nav.querySelector('.navbar-down');
+    navItem.forEach((nav) => {
+      const navDown = nav.querySelector('.navbar-down');
 
-        if (navDown) {
-          nav.addEventListener('mouseenter', () => {
-            navDown.classList.add('navbar-expand');
-          });
-          nav.addEventListener('mouseleave', () => {
-            navDown.classList.remove('navbar-expand');
-          });
-        }
-      });
-    }
+      if (navDown) {
+        nav.addEventListener('mouseenter', () => {
+          navDown.classList.add('navbar-expand');
+        });
+        nav.addEventListener('mouseleave', () => {
+          navDown.classList.remove('navbar-expand');
+        });
+      }
+    });
+  }
 }
 
-customElements.define('header-app', HeaderApp)
+customElements.define('header-app', HeaderApp);
