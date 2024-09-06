@@ -5,56 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/assets/style.css" />
     <link rel="icon" href="./src/assets/logo.jpeg" />
+    <script type="module" src="./src/script/components/index.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    
     <title>Smetaone</title>
   </head>
   <body>
-    <header>
-      <div class="header-app">
-        <div class="title-smetaone">
-          <img
-            src="./src/assets/smetaone.jpeg"
-            alt="smetaone-logo"
-            width="100px"
-          />
-        </div>
-        <nav>
-          <div class="navbar">
-            <ul>
-              <li class="navbar-item"><a class="item" href="#">Beranda</a></li>
-              <li class="navbar-item" style="font-size: 1.2rem; padding: 0.5rem 1.8rem; width: 140px; margin: 0;" >
-                Bidang
-                <ul class="navbar-down">
-                  <li class="navbar-item"><a href="#" class="item-down">Pertolongan Pertama</a></li>
-                  <li class="navbar-item"><a href="#" class="item-down">Pertolongan Tandu Darurat</a></li>
-                  <li class="navbar-item"><a href="#" class="item-down">Perawatan Keluarga</a></li>
-                </ul>
-              </li>
-              <li class="navbar-item"><a class="item" href="#">Tentang</a></li>
-              <li class="navbar-item"><a class="item" href="#">Kontak</a></li>
-            </ul>
-          </div>
-        </nav>
-        <div class="btn-register">
-          <button>Daftar</button>
-        </div>
-      </div>
-    </header>
+    <header-app></header-app>
     <main></main>
     <script>
-      const navItem = document.querySelectorAll('.navbar-item');
-
-      navItem.forEach((nav) => {
-        const navDown = nav.querySelector('.navbar-down');
-
-        if (navDown) {
-          nav.addEventListener('mouseenter', () => {
-            navDown.classList.add('navbar-expand');
-          });
-          nav.addEventListener('mouseleave', () => {
-            navDown.classList.remove('navbar-expand');
-          });
-        }
-      });
+      
     </script>
   </body>
 </html>
