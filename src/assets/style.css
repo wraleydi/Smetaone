@@ -15,7 +15,6 @@ header .header-app {
   align-items: center;
   text-align: center;
   padding: 0.5rem 2rem;
-  border-bottom: 2px solid black;
 }
 
 .navbar ul {
@@ -29,7 +28,7 @@ header .header-app {
   margin-inline: 0.8rem;
 }
 
-.navbar a {
+.navbar .item {
   text-decoration: none;
   padding: 0.5rem 1.8rem;
   color: black;
@@ -38,8 +37,8 @@ header .header-app {
   border-radius: 1.5rem;
 }
 
-.navbar a:hover {
-  background-color: #df1a10;
+.navbar .item:hover {
+  background-color: #ec3f35;
   border-radius: 1.5rem;
   color: white;
 }
@@ -48,7 +47,7 @@ header .header-app {
   border: none;
   padding: 0.8rem 1.5rem;
   border-radius: 1rem;
-  background-color: #df1a10;
+  background-color: #ec3f35;
   color: white;
   font-size: 1rem;
   font-weight: bolder;
@@ -60,25 +59,74 @@ header .header-app {
 }
 
 .navbar-item {
+  position: relative;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-wrap: nowrap;
+  gap: 1rem;
+}
+
+.navbar-item:has(> .navbar-down)::after {
+  content: "";
+  width: 5px;
+  aspect-ratio: 1/1;
+  display: inline-block;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  transform: rotate(45deg);
 }
 
 .navbar .navbar-down {
   position: absolute;
-  flex-direction: column;
   padding: 1rem;
-  border: 1px solid black;
+  background-color: #ec3f35;
+  color: white;
+  border-radius: 1rem;
   align-items: start;
   cursor: pointer;
   display: none;
+  top: 100%;
 }
 
 .navbar-down.navbar-expand {
   display: block;
-  margin: 0;
+  animation: dropdown 200ms linear;
+}
+
+.navbar .navbar-down .item-down {
+  padding: 0.8rem;
+  margin-block: 0.8rem;
+  border-radius: 2rem;
+  transition: ease-in-out 0.5s;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar .navbar-down .item-down:hover {
+  background-color: white;
+  color: #ec3f35;
+  border-radius: 2rem;
 }
 
 .navbar .navbar-expand li {
   margin: 0;
   text-align: start;
+}
+
+@keyframes dropdown {
+  from {
+    transform: translateY(-0.5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+main {
+  height: 100vh;
+  background-color: #df1a10;
 }
