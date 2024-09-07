@@ -13,6 +13,7 @@ class HeaderApp extends HTMLElement {
         <style>
            header .header-app {
   display: flex;
+  background-color: white;
   justify-content: space-between;
   align-items: center;
   text-align: center;
@@ -24,6 +25,7 @@ class HeaderApp extends HTMLElement {
   padding: 0;
   align-items: center;
   list-style: none;
+  font-family: Quicksand, Roboto, sans-serif;
 }
 
 .navbar ul li {
@@ -51,7 +53,7 @@ class HeaderApp extends HTMLElement {
   border-radius: 1rem;
   background-color: #ec3f35;
   color: white;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bolder;
   transition: ease-in-out 0.5s;
 }
@@ -84,6 +86,7 @@ class HeaderApp extends HTMLElement {
   padding: 1rem;
   background-color: #ec3f35;
   color: white;
+  box-shadow: 10px 10px 10px black;
   border-radius: 1rem;
   align-items: start;
   cursor: pointer;
@@ -94,9 +97,11 @@ class HeaderApp extends HTMLElement {
 .navbar-down.navbar-expand {
   display: block;
   animation: dropdown 200ms linear;
+  z-index: 9999;
 }
 
 .navbar .navbar-down .item-down {
+font-family: Roboto, Quicksand, sans-serif;
   padding: 0.8rem 1.2rem;
   margin-block: 0.8rem;
   border-radius: 2rem;
