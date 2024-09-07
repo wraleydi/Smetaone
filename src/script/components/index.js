@@ -1,2 +1,2 @@
 import './header.js';
-import './hero-section.js'
+import './hero-section.js';

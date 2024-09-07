@@ -1,15 +1,15 @@
 class HeroSection extends HTMLElement {
-    constructor() {
-        super()
-        this._shadowRoot = this.attachShadow({ mode:'open' })
-    }
+  constructor() {
+    super();
+    this._shadowRoot = this.attachShadow({ mode: 'open' });
+  }
 
-    connectedCallback() {
-        this.render()
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    render() {
-        this._shadowRoot.innerHTML = `
+  render() {
+    this._shadowRoot.innerHTML = `
         <style>
         .hero-section {
   display: flex;
@@ -99,21 +99,21 @@ class HeroSection extends HTMLElement {
           </div>
         </div>
       </section>
-        `
+        `;
 
-        const images = this._shadowRoot.querySelectorAll('.gallery-image');
-      let currentImageIndex = 0;
+    const images = this._shadowRoot.querySelectorAll('.gallery-image');
+    let currentImageIndex = 0;
 
-      function changeImage() {
-        images[currentImageIndex].classList.remove('active');
+    function changeImage() {
+      images[currentImageIndex].classList.remove('active');
 
-        currentImageIndex = (currentImageIndex + 1) % images.length;
+      currentImageIndex = (currentImageIndex + 1) % images.length;
 
-        images[currentImageIndex].classList.add('active');
-      }
-
-      setInterval(changeImage, 3000);
+      images[currentImageIndex].classList.add('active');
     }
+
+    setInterval(changeImage, 3000);
+  }
 }
 
-customElements.define('hero-section', HeroSection)
+customElements.define('hero-section', HeroSection);
