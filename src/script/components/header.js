@@ -56,6 +56,7 @@ class HeaderApp extends HTMLElement {
   font-size: 1.2rem;
   font-weight: bolder;
   transition: ease-in-out 0.5s;
+  cursor: pointer;
 }
 
 .btn-register button:hover {

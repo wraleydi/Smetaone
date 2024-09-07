@@ -20,61 +20,15 @@ main {
   height: 100vh;
 }
 
-main p {
-  display: flex;
-  align-items: end;
-}
-
-.hero-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.smetaone-section {
+  padding: 3rem;
   height: 100vh;
-  position: relative;
-  overflow: hidden;
+  background-color: #ec3f35;
 }
 
-.hero-text {
-  z-index: 10;
-  color: white;
-  text-align: center;
-  position: relative;
-  font-family: Poppins;
-  font-size: 1.8rem;
-  font-weight: lighter;
-}
-
-.hero-gallery {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.hero-gallery::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Overlay hitam dengan transparansi */
-  z-index: 1; /* Pastikan overlay ada di atas gambar */
-}
-
-.gallery-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.gallery-image.active {
-  opacity: 1;
+.smetaone-info {
+  display: flex;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 3rem;
 }
