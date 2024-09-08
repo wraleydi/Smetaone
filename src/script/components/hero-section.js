@@ -26,7 +26,7 @@ class HeroSection extends HTMLElement {
   color: white;
   text-align: center;
   position: relative;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-size: 1.8rem;
   font-weight: lighter;
 }
@@ -65,7 +65,6 @@ class HeroSection extends HTMLElement {
   opacity: 1;
 }
         </style>
-        <section>
         <div class="hero-section">
           <div class="hero-text">
             <h1>Bersama Smetaone</h1>
@@ -98,7 +97,6 @@ class HeroSection extends HTMLElement {
             />
           </div>
         </div>
-      </section>
         `;
 
     const images = this._shadowRoot.querySelectorAll('.gallery-image');
