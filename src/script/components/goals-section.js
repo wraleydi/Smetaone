@@ -1,15 +1,15 @@
 class GoalsSection extends HTMLElement {
-    constructor() {
-        super()
-        this._shadowRoot = this.attachShadow({ mode:'open'})
-    }
+  constructor() {
+    super();
+    this._shadowRoot = this.attachShadow({ mode: 'open' });
+  }
 
-    connectedCallback() {
-        this.render()
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    render() {
-        this._shadowRoot.innerHTML = `
+  render() {
+    this._shadowRoot.innerHTML = `
         <style>
         .goals-section {
   padding: 3rem;
@@ -113,8 +113,8 @@ class GoalsSection extends HTMLElement {
             </div>
           </div>
         </div>
-        `
-    }
+        `;
+  }
 }
 
-customElements.define('goals-section', GoalsSection)
+customElements.define('goals-section', GoalsSection);
