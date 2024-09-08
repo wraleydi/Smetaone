@@ -1,15 +1,15 @@
 class SmetaoneSection extends HTMLElement {
-    constructor() {
-        super()
-        this._shadowRoot = this.attachShadow({ mode:'open' })
-    }
+  constructor() {
+    super();
+    this._shadowRoot = this.attachShadow({ mode: 'open' });
+  }
 
-    connectedCallback() {
-        this.render()
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    render() {
-        this._shadowRoot.innerHTML = `
+  render() {
+    this._shadowRoot.innerHTML = `
         <style>
         .smetaone-section {
   padding: 3rem;
@@ -66,8 +66,8 @@ class SmetaoneSection extends HTMLElement {
             </div>
           </div>
         </div>
-        `
-    }
+        `;
+  }
 }
 
-customElements.define('smetaone-section', SmetaoneSection)
+customElements.define('smetaone-section', SmetaoneSection);
