@@ -146,7 +146,7 @@ font-family: Roboto, Quicksand, sans-serif;
         <nav>
           <div class="navbar">
             <ul>
-              <li class="navbar-item"><a class="item" href="#">Beranda</a></li>
+              <li class="navbar-item"><a class="item" href="index.html">Beranda</a></li>
               <li class="navbar-item" style="font-size: 1.2rem; padding: 0.5rem 1.8rem; width: 85px; margin: 0;" >
                 Bidang
                 <ul class="navbar-down">

@@ -15,3 +15,64 @@ body {
   padding: 0;
   font-family: Roboto, Quicksand, sans-serif;
 }
+
+.goals-section {
+  padding: 3rem;
+}
+
+.title-goals {
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: Poppins, Quicksand, sans-serif;
+  color: #ec3f35;
+  border-bottom: 5px solid #f8ee16;
+}
+
+.desc {
+  display: flex;
+  padding: 3rem;
+}
+
+.vision {
+  width: 100%;
+  background-color: #ec3f35;
+  margin-inline-end: 6rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  color: white;
+}
+
+.vision h3 {
+  text-align: center;
+  font-family: Poppins, Quicksand, sans-serif;
+  font-size: 1.8rem;
+  margin-block-start: 0;
+}
+
+.vision p {
+  text-align: center;
+  line-height: 1.5rem;
+  font-family: Quicksand, Poppins, sans-serif;
+  font-size: 1.2rem;
+}
+
+.mission {
+  width: 100%;
+  background-color: #ec3f35;
+  padding: 2rem;
+  border-radius: 2rem;
+  color: white;
+}
+
+.mission h3 {
+  text-align: center;
+  font-family: Poppins, Quicksand, sans-serif;
+  font-size: 1.8rem;
+  margin-block-start: 0;
+}
+
+.mission ol li {
+  font-family: Quicksand, Poppins, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}

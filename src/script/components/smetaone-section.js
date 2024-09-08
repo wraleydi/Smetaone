@@ -12,7 +12,7 @@ class SmetaoneSection extends HTMLElement {
     this._shadowRoot.innerHTML = `
         <style>
         .smetaone-section {
-  padding: 3rem;
+  padding: 6rem 3rem;
   background-color: #ec3f35;
 }
 

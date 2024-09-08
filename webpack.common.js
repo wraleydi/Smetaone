@@ -24,11 +24,11 @@ module.exports = {
 
     new CopyWebpackPlugin({
       patterns: [
-      {
-        from: path.join(__dirname, 'src/assets'),
-        to: path.join(__dirname, 'dist'),
-      },
-    ],
+        {
+          from: path.join(__dirname, 'src/assets'),
+          to: path.join(__dirname, 'dist'),
+        },
+      ],
     }),
   ],
 };
