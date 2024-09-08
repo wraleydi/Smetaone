@@ -71,27 +71,27 @@ class HeroSection extends HTMLElement {
           </div>
           <div class="hero-gallery">
             <img
-              src="./src/assets/image1.jpeg"
+              src="image1.jpeg"
               alt="foto bersama"
               class="gallery-image active"
             />
             <img
-              src="./src/assets/image2.jpeg"
+              src="image2.jpeg"
               alt="foto bersama"
               class="gallery-image"
             />
             <img
-              src="./src/assets/image3.jpeg"
+              src="image3.jpeg"
               alt="foto bersama"
               class="gallery-image"
             />
             <img
-              src="./src/assets/image4.jpeg"
+              src="image4.jpeg"
               alt="foto bersama"
               class="gallery-image"
             />
             <img
-              src="./src/assets/image5.jpeg"
+              src="image5.jpeg"
               alt="foto bersama"
               class="gallery-image"
             />

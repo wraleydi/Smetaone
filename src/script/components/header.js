@@ -138,7 +138,7 @@ font-family: Roboto, Quicksand, sans-serif;
       <div class="header-app">
         <div class="title-smetaone">
           <img
-            src="./src/assets/smetaone.jpeg"
+            src="smetaone.jpeg"
             alt="smetaone-logo"
             width="100px"
           />
