@@ -34,9 +34,12 @@ body {
 
 .team-group {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Membagi grid menjadi 2 kolom */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(400px, 1fr)
+  ); /* Membagi grid menjadi 2 kolom */
   grid-gap: 20px; /* Jarak antara item grid */
-  
+
   justify-content: start;
   align-items: stretch;
   text-align: center;
@@ -47,7 +50,7 @@ body {
   justify-self: center;
 }
 
-.team-group > :nth-child(n+6) {
+.team-group > :nth-child(n + 6) {
   grid-row: 5;
 }
 
