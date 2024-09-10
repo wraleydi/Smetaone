@@ -16,63 +16,56 @@ body {
   font-family: Roboto, Quicksand, sans-serif;
 }
 
-.goals-section {
+.organization-structure {
+  background-color: #ec3f35;
+}
+
+.structure {
   padding: 3rem;
 }
 
-.title-goals {
+.title-structure {
   text-align: center;
-  font-size: 1.8rem;
+  color: white;
   font-family: Poppins, Quicksand, sans-serif;
-  color: #ec3f35;
+  font-size: 1.8rem;
   border-bottom: 5px solid #f8ee16;
 }
 
-.desc {
-  display: flex;
-  padding: 3rem;
+.team-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Membagi grid menjadi 2 kolom */
+  grid-gap: 20px; /* Jarak antara item grid */
+  
+  justify-content: start;
+  align-items: stretch;
+  text-align: center;
 }
 
-.vision {
-  width: 100%;
-  background-color: #ec3f35;
-  margin-inline-end: 6rem;
+.team-group > :nth-child(3) {
+  grid-column: 1 / -1; /* Agar item ke-3 memenuhi baris kedua */
+  justify-self: center;
+}
+
+.team-group > :nth-child(n+6) {
+  grid-row: 5;
+}
+
+.team-char {
   padding: 2rem;
+  background-color: white;
+  margin: 6rem;
   border-radius: 2rem;
-  color: white;
+  color: #ec3f35;
 }
 
-.vision h3 {
-  text-align: center;
-  font-family: Poppins, Quicksand, sans-serif;
+.team-char figcaption {
+  margin-block-start: 2rem;
+  font-family: Poppins;
+  font-weight: bold;
   font-size: 1.8rem;
-  margin-block-start: 0;
 }
 
-.vision p {
-  text-align: center;
-  line-height: 1.5rem;
-  font-family: Quicksand, Poppins, sans-serif;
-  font-size: 1.2rem;
-}
-
-.mission {
-  width: 100%;
-  background-color: #ec3f35;
-  padding: 2rem;
+.team-char img {
   border-radius: 2rem;
-  color: white;
-}
-
-.mission h3 {
-  text-align: center;
-  font-family: Poppins, Quicksand, sans-serif;
-  font-size: 1.8rem;
-  margin-block-start: 0;
-}
-
-.mission ol li {
-  font-family: Quicksand, Poppins, sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
 }
