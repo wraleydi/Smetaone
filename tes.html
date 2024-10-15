@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .team-group {
+  display: grid;
+  justify-content: center; /* Agar grid berada di tengah */
+  grid-template-columns: repeat(2, 300px); /* Set 2 kolom dengan lebar 300px */
+  grid-gap: 20px; /* Jarak antara item grid */
+}
+
+/* Atur item di urutan 1-4 dalam 2 kolom dan 2 baris */
+.team-group > :nth-child(1),
+.team-group > :nth-child(2),
+.team-group > :nth-child(3),
+.team-group > :nth-child(4) {
+  grid-column: span 1; /* Setiap item mengambil 1 kolom */
+}
+
+/* Atur item ke-5 di baris ketiga dengan lebar penuh */
+.team-group > :nth-child(5) {
+  grid-column: 1 / -1; /* Memenuhi seluruh kolom */
+}
+
+/* Atur item ke-6 sampai ke-9 di baris terakhir */
+.team-group > :nth-child(n+6) {
+  grid-column: span 1; /* Setiap item menempati 1 kolom */
+}
+
+/* Responsif: Ketika layar diperkecil, ubah semua item menjadi satu kolom */
+@media (max-width: 768px) {
+  .team-group {
+    grid-template-columns: 1fr; /* Semua item berada dalam satu kolom */
+  }
+  
+  .team-group > :nth-child(1),
+  .team-group > :nth-child(2),
+  .team-group > :nth-child(3),
+  .team-group > :nth-child(4),
+  .team-group > :nth-child(5),
+  .team-group > :nth-child(n+6) {
+    grid-column: span 1; /* Setiap item tetap menempati 1 kolom */
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="team-group">
+        <div class="team-char">
+          <h3>Ketua</h3>
+          <img src="./profil.jpg" alt="profil" width="200px">
+          <figcaption>Meilina Pratiwi</figcaption>
+        </div>
+        <div class="team-char">
+          <h3>Wakil Ketua</h3>
+          <img src="./profil.jpg" alt="profil" width="200px">
+          <figcaption>Kezia Njayani Dhiputri</figcaption>
+        </div>
+        <div class="team-char">
+          <h3>Sekretaris</h3>
+          <img src="./profil.jpg" alt="profil" width="200px">
+          <figcaption>Rizky Hartono</figcaption>
+        </div>
+        <div class="team-char">
+          <h3>Bendahara</h3>
+          <img src="./profil.jpg" alt="profil" width="200px">
+          <figcaption>Andi Kurniawan</figcaption>
+        </div>
+        <div class="team-char">
+          <h3>Koordinator</h3>
+          <img src="./profil.jpg" alt="profil" width="200px">
+          <figcaption>Sinta Putri</figcaption>
+        </div>
+        <div class="team-char">
+          <h3>Anggota 1</h3>
+          <img src="./profil.jpg" alt="profil" width="200px">
+          <figcaption>Dian Aulia</figcaption>
+        </div>
+        <div class="team-char">
+          <h3>Anggota 2</h3>
+          <img src="./profil.jpg" alt="profil" width="200px">
+          <figcaption>Adit Saputra</figcaption>
+        </div>
+        <div class="team-char">
+          <h3>Anggota 3</h3>
+          <img src="./profil.jpg" alt="profil" width="200px">
+          <figcaption>Sri Handayani</figcaption>
+        </div>
+        <div class="team-char">
+          <h3>Anggota 4</h3>
+          <img src="./profil.jpg" alt="profil" width="200px">
+          <figcaption>Joko Pratama</figcaption>
+        </div>
+      </div>
+      
+</body>
+</html>
