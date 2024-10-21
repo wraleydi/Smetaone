@@ -18,6 +18,7 @@ body {
 
 .organization-structure {
   background-color: #ec3f35;
+  overflow: hidden;
 }
 
 .structure {
@@ -32,17 +33,22 @@ body {
   border-bottom: 5px solid #f8ee16;
 }
 
-.organizer {
+.slide {
   display: flex;
-  display: flex;
-  overflow-x: auto;
-  white-space: nowrap;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
 }
 
-.organizer::-webkit-scrollbar {
-  display: none;
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.organizer {
+  display: flex;
+  animation: 25s slide infinite linear;
 }
 
 .follow {
