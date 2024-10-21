@@ -31,3 +31,21 @@ body {
   font-size: 1.8rem;
   border-bottom: 5px solid #f8ee16;
 }
+
+.organizer {
+  display: flex;
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.organizer::-webkit-scrollbar {
+  display: none;
+}
+
+.follow {
+  margin-block: 3rem;
+  flex-shrink: 0;
+}
