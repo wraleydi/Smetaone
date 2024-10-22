@@ -16,42 +16,13 @@ body {
   font-family: Roboto, Quicksand, sans-serif;
 }
 
-.organization-structure {
-  background-color: #ec3f35;
-  overflow: hidden;
+.card img {
+  width: 250px;
 }
 
-.structure {
-  padding: 3rem;
-}
-
-.title-structure {
-  text-align: center;
-  color: white;
-  font-family: Poppins, Quicksand, sans-serif;
-  font-size: 1.8rem;
-  border-bottom: 5px solid #f8ee16;
-}
-
-.slide {
-  display: flex;
-}
-
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-.organizer {
-  display: flex;
-  animation: 25s slide infinite linear;
-}
-
-.follow {
-  margin-block: 3rem;
-  flex-shrink: 0;
+.bidang-section {
+  background-image: url('background-pmr.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

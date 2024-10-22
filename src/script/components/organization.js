@@ -20,7 +20,7 @@ class OrganizationStructure extends HTMLElement {
   padding: 3rem;
 }
 
-.title-structure {
+.h3-structure {
   text-align: center;
   color: white;
   font-family: Poppins, Quicksand, sans-serif;
@@ -43,48 +43,67 @@ class OrganizationStructure extends HTMLElement {
 
 .organizer {
   display: flex;
-  animation: 25s slide infinite linear;
+  animation: 30s slide infinite linear;
 }
 
 .follow {
   margin-block: 3rem;
   flex-shrink: 0;
+  text-align: center;
 }
         </style>
 
         <div class="organization-structure">
           <div class="structure">
-            <div class="title-structure">
+            <div class="h3-structure">
               <h2>Tim Pengurus</h2>
             </div>
             <div class="slide">
             <div class="organizer">
               <div class="follow">
+              <h3>jabatan</h3>
                 <img src="user.png" alt="#" width="250px">
+                <figcaption>user name</figcaption>
               </div>
               <div class="follow">
+              <h3>jabatan</h3>
                 <img src="user.png" alt="#" width="250px">
+                <figcaption>user name</figcaption>
               </div>
               <div class="follow">
+              <h3>jabatan</h3>
                 <img src="user.png" alt="#" width="250px">
+                <figcaption>user name</figcaption>
               </div>
               <div class="follow">
+              <h3>jabatan</h3>
                 <img src="user.png" alt="#" width="250px">
+                <figcaption>user name</figcaption>
               </div>
               <div class="follow">
+              <h3>jabatan</h3>
                 <img src="user.png" alt="#" width="250px">
+                <figcaption>user name</figcaption>
               </div>
               <div class="follow">
+              <h3>jabatan</h3>
                 <img src="user.png" alt="#" width="250px">
+                <figcaption>user name</figcaption>
               </div>
               <div class="follow">
+              <h3>jabatan</h3>
                 <img src="user.png" alt="#" width="250px">
+                <figcaption>user name</figcaption>
               </div>
               <div class="follow">
+              <h3>jabatan</h3>
                 <img src="user.png" alt="#" width="250px">
+                <figcaption>user name</figcaption>
               </div>
               <div class="follow">
+              <h3>jabatan</h3>
                 <img src="user.png" alt="#" width="250px">
+                <figcaption>user name</figcaption>
               </div>
             </div>
           </div>
