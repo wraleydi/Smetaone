@@ -17,7 +17,7 @@ body {
 }
 
 .card img {
-  width: 400px;
+  width: 350px;
 }
 
 .bidang-section {
@@ -26,6 +26,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  z-index: 0;
 }
 
 .bidang-section::before {
@@ -35,14 +36,34 @@ body {
   right: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.322);
+  background-color: rgba(0, 0, 0, 0.315);
   z-index: 1;
 }
 
 .content-section {
+  position: relative;
   display: grid;
   height: 100vh;
   justify-items: center;
-  padding: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+  padding-block-start: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+  gap: 4rem;
+  z-index: 9999;
 }
+
+.card {
+  text-align: center;
+}
+
+.card img{
+  border-radius: 2rem;
+  box-shadow: 20px 20px 20px black;
+  margin-block-end: 2rem;
+}
+
+.card a {
+  text-decoration: none;
+  color: #ec3f35;
+}
+
