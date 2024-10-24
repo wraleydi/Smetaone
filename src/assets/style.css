@@ -36,7 +36,7 @@ body {
   right: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.315);
+  background-color: rgba(0, 0, 0, 0.425);
   z-index: 1;
 }
 
@@ -57,12 +57,48 @@ body {
 }
 
 .card img {
+  display: block;
   border-radius: 2rem;
-  box-shadow: 20px 20px 20px black;
-  margin-block-end: 2rem;
+  transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in;
+  animation: HoverEffect 6s infinite;
+  cursor: pointer;
 }
 
 .card a {
   text-decoration: none;
   color: #ec3f35;
+}
+
+@keyframes HoverEffect {
+  0%, 80%, 100% {
+    box-shadow: none;
+    transform: scale(1);
+  } 
+  20%, 60% {
+    box-shadow: 20px 20px 20px black;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+}
+
+.material-symbols-outlined {
+  color: white;
+  font-size: 2rem;
+  padding: 1.2rem;
+  animation: slideDown 2s infinite;
+  cursor: pointer;
 }
