@@ -59,7 +59,9 @@ body {
 .card img {
   display: block;
   border-radius: 2rem;
-  transition: box-shadow 0.5s ease-in-out, transform 0.5s ease-in;
+  transition:
+    box-shadow 0.5s ease-in-out,
+    transform 0.5s ease-in;
   animation: HoverEffect 6s infinite;
   cursor: pointer;
 }
@@ -70,11 +72,14 @@ body {
 }
 
 @keyframes HoverEffect {
-  0%, 80%, 100% {
+  0%,
+  80%,
+  100% {
     box-shadow: none;
     transform: scale(1);
-  } 
-  20%, 60% {
+  }
+  20%,
+  60% {
     box-shadow: 20px 20px 20px black;
     transform: scale(1.05);
   }
