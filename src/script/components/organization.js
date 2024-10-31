@@ -62,47 +62,47 @@ class OrganizationStructure extends HTMLElement {
             <div class="organizer">
               <div class="follow">
               <h3>jabatan</h3>
-                <img src="user.png" alt="#" width="250px">
+                <img src="image/user.png" alt="#" width="250px">
                 <figcaption>user name</figcaption>
               </div>
               <div class="follow">
               <h3>jabatan</h3>
-                <img src="user.png" alt="#" width="250px">
+                <img src="image/user.png" alt="#" width="250px">
                 <figcaption>user name</figcaption>
               </div>
               <div class="follow">
               <h3>jabatan</h3>
-                <img src="user.png" alt="#" width="250px">
+                <img src="image/user.png" alt="#" width="250px">
                 <figcaption>user name</figcaption>
               </div>
               <div class="follow">
               <h3>jabatan</h3>
-                <img src="user.png" alt="#" width="250px">
+                <img src="image/user.png" alt="#" width="250px">
                 <figcaption>user name</figcaption>
               </div>
               <div class="follow">
               <h3>jabatan</h3>
-                <img src="user.png" alt="#" width="250px">
+                <img src="image/user.png" alt="#" width="250px">
                 <figcaption>user name</figcaption>
               </div>
               <div class="follow">
               <h3>jabatan</h3>
-                <img src="user.png" alt="#" width="250px">
+                <img src="image/user.png" alt="#" width="250px">
                 <figcaption>user name</figcaption>
               </div>
               <div class="follow">
               <h3>jabatan</h3>
-                <img src="user.png" alt="#" width="250px">
+                <img src="image/user.png" alt="#" width="250px">
                 <figcaption>user name</figcaption>
               </div>
               <div class="follow">
               <h3>jabatan</h3>
-                <img src="user.png" alt="#" width="250px">
+                <img src="image/user.png" alt="#" width="250px">
                 <figcaption>user name</figcaption>
               </div>
               <div class="follow">
               <h3>jabatan</h3>
-                <img src="user.png" alt="#" width="250px">
+                <img src="image/user.png" alt="#" width="250px">
                 <figcaption>user name</figcaption>
               </div>
             </div>

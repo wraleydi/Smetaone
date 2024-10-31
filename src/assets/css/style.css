@@ -22,7 +22,7 @@ body {
 
 .bidang-section {
   position: relative;
-  background-image: url('background-pmr.jpg');
+  background-image: url('/src/assets/image/background-pmr.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

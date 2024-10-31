@@ -44,7 +44,7 @@ class SmetaoneSection extends HTMLElement {
           <div class="smetaone-info">
             <div class="smetaone-image">
               <img
-                src="logo-smetaone.jpeg"
+                src="image/logo-smetaone.jpeg"
                 alt="smetaone logo"
                 width="250px"
               />
