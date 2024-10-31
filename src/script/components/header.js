@@ -11,6 +11,13 @@ class HeaderApp extends HTMLElement {
   render() {
     this._shadowRoot.innerHTML = `
         <style>
+        header {
+        position: sticky;
+  top: 0;
+  z-index: 9999;
+        }
+
+
            header .header-app {
   display: flex;
   background-color: white;
