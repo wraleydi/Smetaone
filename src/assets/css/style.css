@@ -27,7 +27,7 @@ body {
   background-position: center;
   background-size: cover;
   z-index: 0;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -47,7 +47,7 @@ body {
   display: grid;
   justify-items: center;
   justify-content: center;
-  padding-block-start: 6rem;
+  padding-block: 6rem 10rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
   gap: 4rem;
   z-index: 9999;
@@ -55,21 +55,27 @@ body {
 
 .card {
   text-align: center;
+  justify-items: center;
+}
+
+.card-img {
   padding: 2rem 2rem 0 2rem;
   background-color: #ec3f35;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   transition:
     box-shadow 0.5s ease-in-out,
     transform 0.5s ease-in;
   animation: HoverEffect 5s infinite;
   cursor: pointer;
-  
 }
 
 .card img {
   display: block;
-  border-radius: 2rem;
+  margin: auto;
+  border-radius: 1.5rem;
   width: 280px;
+  background-color: #ec3f35;
+  
 }
 
 .card a {
