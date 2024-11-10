@@ -32,66 +32,62 @@
       <section>
         <div class="bidang-section">
           <div class="content-section">
-            <div class="card">
-              <div class="card-img">
+            <div id="PP-card" class="card">
+              <div id="PP-img" class="card-img">
                 <img
                   src="PP.jpeg"
                   style="animation-delay: 0s"
                   alt="pertolongan pertama"
                 />
-                <span id="arrow-top" class="material-symbols-outlined">
+                <span id="arrow-down" class="material-symbols-outlined" data-content="PP-capt" data-img="PP-img">
                   keyboard_arrow_down
                 </span>
               </div>
-              <div class="capt">
+              <div id="PP-capt" class="card-capt">
                 <h3>Pertolongan Pertama</h3>
                 <p>
                   Bidang Pertolongan Pertama (PP) dalam Palang Merah Remaja
                   bertujuan memberikan pengetahuan dasar tentang penanganan
-                  cedera dan bantuan medis dasar kepada remaja. Anggota PMR
-                  dilatih untuk memahami tindakan cepat dan tepat saat terjadi
-                  kecelakaan atau situasi darurat.
+                  cedera dan bantuan medis dasar.
                 </p>
               </div>
             </div>
-            <div class="card">
-              <div class="card-img">
+            <div id="PTD-card" class="card">
+              <div id="PTD-img" class="card-img">
                 <img
                   src="PTD.jpeg"
                   style="animation-delay: 1s"
                   alt="pertolongan tandu darurat"
                 />
-                <span id="arrow-top" class="material-symbols-outlined">
+                <span id="arrow-down" class="material-symbols-outlined" data-content="PTD-capt" data-img="PTD-img">
                   keyboard_arrow_down
                 </span>
               </div>
-              <div class="capt">
+              <div id="PTD-capt" class="card-capt">
                 <h3>Pertolongan Tandu Darurat</h3>
                 <p>
                   Bidang Pertolongan Tandu Darurat (PTD) dalam Palang Merah
                   Remaja berfokus pada teknik pembuatan tandu darurat untuk
-                  mengevakuasi korban yang mengalami kecelakaan atau bencana
-                  ketempat yang layak dan aman.
+                  mengevakuasi korban kecelakaan atau bencana.
                 </p>
               </div>
             </div>
-            <div class="card">
-              <div class="card-img">
+            <div id="PK-card" class="card">
+              <div id="PK-img" class="card-img">
                 <img
                   src="PK.jpeg"
                   style="animation-delay: 2s"
                   alt="perawatan keluarga"
                 />
-                <span id="arrow-top" class="material-symbols-outlined">
+                <span id="arrow-down" class="material-symbols-outlined" data-content="PK-capt" data-img="PK-img">
                   keyboard_arrow_down
                 </span>
               </div>
-              <div class="capt">
+              <div id="PK-capt" class="card-capt">
                 <h3>Perawatan Keluarga</h3>
                 <p>
                   Perawatan Keluarga (PK) dalam Palang Merah Remaja mengajarkan
                   keterampilan dasar dalam menjaga kesehatan dan merawat anggota
-                  keluarga, dengan menggunakan alat-alat yang ada di lingkungan
                   keluarga.
                 </p>
               </div>
@@ -100,6 +96,21 @@
         </div>
       </section>
     </main>
-    <script></script>
+    <script>
+      document.querySelectorAll('#arrow-down').forEach(function(arrow){
+        arrow.addEventListener('click', function(){
+
+          const contentId = arrow.getAttribute('data-content')
+
+          const content = document.getElementById(contentId)
+          content.classList.toggle('expand')
+
+          const imgContentId = arrow.getAttribute('data-img')
+
+          const imgContent = document.getElementById(imgContentId)
+          imgContent.classList.toggle('no-animation')
+        })
+      })
+    </script>
   </body>
 </html>
