@@ -1,7 +1,7 @@
 class HeaderApp extends HTMLElement {
   constructor() {
     super();
-    this._shadowRoot = this.attachShadow({ mode: 'open' });
+
   }
 
   connectedCallback() {
@@ -9,7 +9,7 @@ class HeaderApp extends HTMLElement {
   }
 
   render() {
-    this._shadowRoot.innerHTML = `
+    this.innerHTML = `
         <style>
         header {
         position: sticky;
@@ -81,7 +81,7 @@ class HeaderApp extends HTMLElement {
 
 .navbar-item:has(> .navbar-down)::after {
   content: "";
-  width: 5px;
+  width: 8px;
   aspect-ratio: 1/1;
   display: inline-block;
   border-right: 1px solid black;
@@ -154,7 +154,7 @@ font-family: Roboto, Quicksand, sans-serif;
           <div class="navbar">
             <ul>
               <li class="navbar-item"><a class="item" href="index.html">Beranda</a></li>
-              <li class="navbar-item" style="font-size: 1.2rem; padding: 0.5rem 1.8rem; width: 85px; margin: 0;" >
+              <li class="navbar-item" style="font-size: 1.2rem; padding: 0.5rem 1rem;  margin: 0;" >
                 Bidang
                 <ul class="navbar-down">
                   <li class="navbar-item"><a href="#" class="item-down">Pertolongan Pertama</a></li>
@@ -174,7 +174,7 @@ font-family: Roboto, Quicksand, sans-serif;
     </header>
         `;
 
-    const navItem = this._shadowRoot.querySelectorAll('.navbar-item');
+    const navItem = document.querySelectorAll('.navbar-item');
 
     navItem.forEach((nav) => {
       const navDown = nav.querySelector('.navbar-down');
