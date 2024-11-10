@@ -16,10 +16,6 @@ body {
   font-family: Roboto, Quicksand, sans-serif;
 }
 
-.card img {
-  width: 350px;
-}
-
 .bidang-section {
   position: relative;
   background-image: url('/src/assets/image/background-pmr.jpg');
@@ -42,12 +38,29 @@ body {
   z-index: 1;
 }
 
+.tagline {
+  display: flex;
+}
+
+.tagline h2 {
+  max-width: 1000px;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  padding: 6rem 6rem 0 6rem;
+  color: rgb(255, 255, 255);
+  z-index: 2;
+  font-size: 2.2rem;
+}
+
+
 .content-section {
   position: relative;
   display: grid;
   justify-items: center;
   justify-content: center;
-  padding-block: 6rem 8rem;
+  padding-block: 6rem 6rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
   gap: 4rem;
   z-index: 9999;
@@ -66,7 +79,7 @@ body {
 .card-img {
   height: 250px;
   border-radius: 1.5rem;
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: #ec3f35;
   transition:
     box-shadow 0.5s ease-in-out,
@@ -82,15 +95,9 @@ body {
 }
 
 .card-capt {
-  display: none;
-}
-
-.card-capt.expand {
-  display: block;
-  max-height: 200px;
+  display: none; /* Mulai dengan menyembunyikan elemen */
+  max-height: 0;
   position: absolute;
-  align-self: start;
-  align-items: start;
   max-width: 300px;
   background-color: white;
   justify-content: center;
@@ -98,15 +105,25 @@ body {
   padding: 1rem;
   bottom: 0;
   top: 8rem;
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+}
+
+
+.card-capt.expand {
+  display: block;
+  max-height: 200px;
   animation: slideDown 200ms linear;
 }
 
 .card-capt p {
   margin-block-end: 0;
 }
+.card-capt h3 {
+  margin-block-start: 0.5rem;
+}
 
 .card a {
-  text-decoration: none;
   color: #ec3f35;
 }
 
@@ -120,11 +137,11 @@ body {
   20%,
   60% {
     box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.815);
-    transform: scale(1.05);
+    transform: scale(1.02);
   }
 }
 
-@keyframes slideDown {
+@keyframes arrowDown {
   0% {
     transform: translateY(-10px);
     opacity: 0;
@@ -139,11 +156,11 @@ body {
   }
 }
 
-.material-symbols-outlined {
+#arrow-down{
   color: white;
   font-size: 2rem;
   padding: 1.2rem;
-  animation: slideDown 2s infinite;
+  animation: arrowDown 2s infinite;
   cursor: pointer;
 }
 
@@ -161,5 +178,12 @@ body {
     opacity: 1;
   }
 }
+
+#arrow-up {
+  transform: rotate(180deg);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
 
 
