@@ -1,14 +1,14 @@
 class BidangSection extends HTMLElement {
-    constructor() {
-        super()
-    }
-    
-    connectedCallback() {
-        this.render()
-    }
+  constructor() {
+    super();
+  }
 
-    render() {
-        this.innerHTML = `
+  connectedCallback() {
+    this.render();
+  }
+
+  render() {
+    this.innerHTML = `
         <style>
         .bidang-section {
   position: relative;
@@ -258,34 +258,32 @@ class BidangSection extends HTMLElement {
             </div>
           </div>
         </div>
-        `
+        `;
 
-        document.querySelectorAll('#arrow-down').forEach(function(arrow){
-            arrow.addEventListener('click', function(){
-    
-              const contentId = arrow.getAttribute('data-content')
-              const content = document.getElementById(contentId)
-              content.classList.toggle('expand')
-    
-              const imgContentId = arrow.getAttribute('data-img')
-              const imgContent = document.getElementById(imgContentId)
-              imgContent.classList.toggle('no-animation')
-    
-            })
-          })
-    
-          document.querySelectorAll('#arrow-up').forEach(function(arrow){
-            arrow.addEventListener('click', function(){
-              const contentId = arrow.getAttribute('data-content')
-              const content = document.getElementById(contentId)
-              content.classList.remove('expand')
-    
-              const imgContentId = arrow.getAttribute('data-img')
-              const imgContent = document.getElementById(imgContentId)
-              imgContent.classList.remove('no-animation')
-            })
-          })
-    }
+    document.querySelectorAll('#arrow-down').forEach(function (arrow) {
+      arrow.addEventListener('click', function () {
+        const contentId = arrow.getAttribute('data-content');
+        const content = document.getElementById(contentId);
+        content.classList.toggle('expand');
+
+        const imgContentId = arrow.getAttribute('data-img');
+        const imgContent = document.getElementById(imgContentId);
+        imgContent.classList.toggle('no-animation');
+      });
+    });
+
+    document.querySelectorAll('#arrow-up').forEach(function (arrow) {
+      arrow.addEventListener('click', function () {
+        const contentId = arrow.getAttribute('data-content');
+        const content = document.getElementById(contentId);
+        content.classList.remove('expand');
+
+        const imgContentId = arrow.getAttribute('data-img');
+        const imgContent = document.getElementById(imgContentId);
+        imgContent.classList.remove('no-animation');
+      });
+    });
+  }
 }
 
-customElements.define('bidang-section', BidangSection)
+customElements.define('bidang-section', BidangSection);

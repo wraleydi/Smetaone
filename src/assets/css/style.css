@@ -54,7 +54,6 @@ body {
   font-size: 2.2rem;
 }
 
-
 .content-section {
   position: relative;
   display: grid;
@@ -109,7 +108,6 @@ body {
   overflow: hidden;
 }
 
-
 .card-capt.expand {
   display: block;
   max-height: 200px;
@@ -156,7 +154,7 @@ body {
   }
 }
 
-#arrow-down{
+#arrow-down {
   color: white;
   font-size: 2rem;
   padding: 1.2rem;
@@ -184,6 +182,3 @@ body {
   font-size: 2rem;
   cursor: pointer;
 }
-
-
-
