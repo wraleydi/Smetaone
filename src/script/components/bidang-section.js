@@ -89,7 +89,7 @@ class BidangSection extends HTMLElement {
 }
 
 .card-capt {
-  display: none; /* Mulai dengan menyembunyikan elemen */
+  display: none;
   max-height: 0;
   position: absolute;
   max-width: 300px;

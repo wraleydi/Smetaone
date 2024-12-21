@@ -16,3 +16,39 @@ body {
   font-family: Roboto, Quicksand, sans-serif;
 }
 
+.smetaone-section {
+  display: flex;
+  padding: 3rem 3rem 0 0;
+  background-color: #ec3f35;
+}
+
+.smetaone-info {
+  display: flex;
+  align-self: flex-start;
+  background-color: white;
+  padding:  2rem 2rem 2rem 0rem;
+  margin:  3rem 0rem 3rem 0rem;
+  border-radius: 0 1.5rem 1.5rem 0;
+}
+
+.smetaone-char {
+  align-self: flex-end;
+  justify-content: end;
+  justify-items: end;
+  justify-self: end;
+  margin-inline-end: 6rem;
+  line-height: 0;
+}
+
+.smetaone-desc h3 {
+  font-size: 2rem;
+  font-family: Poppins, Quicksand, sans-serif;
+  margin: 0;
+  color: #ec3f35;
+}
+
+.smetaone-desc p {
+  font-size: 1.2rem;
+  font-family: Quicksand, Poppins, sans-serif;
+  line-height: 1.5rem;
+}

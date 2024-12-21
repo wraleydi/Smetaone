@@ -63,7 +63,7 @@ class OrganizationStructure extends HTMLElement {
               <div class="follow">
               <h3>jabatan</h3>
                 <img src="user.png" alt="#" width="250px">
-                <figcaption>user name</figcaption>
+                <figcaption>user</figcaption>
               </div>
               <div class="follow">
               <h3>jabatan</h3>

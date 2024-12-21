@@ -1,7 +1,6 @@
 class HeaderApp extends HTMLElement {
   constructor() {
     super();
-
   }
 
   connectedCallback() {
