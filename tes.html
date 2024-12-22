@@ -1,55 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Seamless Auto Scroll</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-      }
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Typing Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
 
-      .scroll-container {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        overflow: hidden;
-        white-space: nowrap;
-      }
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #2f3542;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}
 
-      .scroll-container img {
-        height: 100vh;
-        display: inline-block;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="scroll-container" class="scroll-container">
-      <img src="./src/assets/user.png" alt="Scrolling Image" />
-      <img src="./src/assets/user.png" alt="Scrolling Image" />
+.animated-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.animated-text span{
+    position: relative;
+}
+
+.animated-text span::before{
+    content: "Youtuber";
+    color: #ff7f50;
+    animation: words 20s infinite;
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #2f3542;
+    border-left: 2px solid #ff7f50;
+    right: -8px;
+    animation: cursor .8s infinite, typing 10s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+  0%, 50% {
+      content: "Bersama Smetaone";
+  }
+  51%, 100% {
+      content: "Aksi Remaja Untuk Kemanusiaan";
+  }
+}
+
+@keyframes typing {
+  0%, 30%, 50%, 70%, 100%{
+        width: 0;
+    }
+    5%, 25%, 45%, 65%, 95%{
+        width: calc(100% + 8px);
+    }
+}
+</style>
+<body>
+    <div class="animated-text">
+        I'm a <span></span>
     </div>
-
-    <script>
-      const scrollContainer = document.getElementById('scroll-container');
-      let scrollAmount = 0;
-
-      function autoScroll() {
-        scrollAmount += 2;
-        scrollContainer.scrollLeft = scrollAmount;
-
-        // If the scroll reaches the width of one image, reset smoothly
-        if (scrollAmount >= scrollContainer.scrollWidth / 2) {
-          scrollAmount = 0; // Reset scroll position to the start
-        }
-
-        requestAnimationFrame(autoScroll);
-      }
-
-      autoScroll();
-    </script>
-  </body>
+</body>
 </html>

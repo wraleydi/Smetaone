@@ -83,7 +83,7 @@ position: relative;
   cursor: pointer;
 }
 
-.btn-register button:hover {
+.btn-register button:hover {  
   box-shadow: 0 0 10px #ec3f35;
 }
 
