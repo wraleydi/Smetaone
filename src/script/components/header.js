@@ -23,12 +23,13 @@ class HeaderApp extends HTMLElement {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: 0.5rem 2rem;
+  padding: 0 2rem;
 }
 
 .navbar ul {
   display: flex;
   padding: 0;
+  margin: 0;
   align-items: center;
   list-style: none;
   font-family: Quicksand, Roboto, sans-serif;
@@ -38,19 +39,36 @@ class HeaderApp extends HTMLElement {
   margin-inline: 0.8rem;
 }
 
-.navbar .item {
+.navbar ul li .item {
+position: relative;
   text-decoration: none;
-  padding: 0.5rem 1.8rem;
+  display: inline-block;
+  padding: 1.5rem;
   color: black;
   font-size: 1.2rem;
-  transition: ease-in-out 0.5s;
-  border-radius: 1.5rem;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: ease-in-out 0.3s;
 }
 
-.navbar .item:hover {
-  background-color: #ec3f35;
-  border-radius: 1.5rem;
-  color: white;
+.navbar ul li .item::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background-color: rgb(236, 29, 18);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar ul li .item:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.navbar ul li .item:hover {
+  color: rgb(236, 29, 18);
 }
 
 .btn-register button {
@@ -109,9 +127,10 @@ class HeaderApp extends HTMLElement {
 
 .navbar .navbar-down .item-down {
 font-family: Roboto, Quicksand, sans-serif;
-  padding: 0.8rem 1.2rem;
-  margin-block: 0.8rem;
-  border-radius: 2rem;
+  padding: 1rem;
+  margin-block: 0.5rem;
+  border-bottom: 2px solid white;
+  border-radius: 1rem;
   transition: ease-in-out 0.5s;
   width: 100%;
   text-decoration: none;
@@ -119,9 +138,9 @@ font-family: Roboto, Quicksand, sans-serif;
 }
 
 .navbar .navbar-down .item-down:hover {
-  background-color: white;
-  color: #ec3f35;
-  border-radius: 2rem;
+ background-color: white;
+ color: #ec3f35;
+ 
 }
 
 .navbar .navbar-expand li {
@@ -144,7 +163,7 @@ font-family: Roboto, Quicksand, sans-serif;
       <div class="header-app">
         <div class="title-smetaone">
           <img
-            src="smetaone.jpeg"
+            src="logos/smetaone.jpeg"
             alt="smetaone-logo"
             width="100px"
           />
@@ -153,7 +172,7 @@ font-family: Roboto, Quicksand, sans-serif;
           <div class="navbar">
             <ul>
               <li class="navbar-item"><a class="item" href="index.html">Beranda</a></li>
-              <li class="navbar-item" style="font-size: 1.2rem; padding: 0.5rem 1rem;  margin: 0;" >
+              <li class="navbar-item" style="font-size: 1.2rem; font-weight: 500; padding: 0.5rem 1rem;  margin: 0;" >
                 Bidang
                 <ul class="navbar-down">
                   <li class="navbar-item"><a href="#" class="item-down">Pertolongan Pertama</a></li>
