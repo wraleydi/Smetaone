@@ -52,3 +52,79 @@ body {
   font-family: Quicksand, Poppins, sans-serif;
   line-height: 1.5rem;
 }
+
+.goals-section {
+  
+}
+
+.vision-mission {
+  display: flex;
+}
+
+.title-goals {
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: Poppins, Quicksand, sans-serif;
+  color: #ec3f35;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  justify-content: flex-end;
+  align-items: end;
+  padding: 3rem 0 3rem 3rem;
+  gap: 2rem;
+}
+
+.vision {
+  right: 0;
+  width: 100%;
+  background-color: #ec3f35;
+  padding: 1.5rem;
+  border-radius: 1rem 0 0 1rem;
+  color: white;
+  text-align: left;
+}
+
+.vision h3 {
+  font-family: Poppins, Quicksand, sans-serif;
+  font-size: 1.8rem;
+  margin-block-start: 0;
+  margin-block-end: 1rem;
+}
+
+.vision p {
+  line-height: 1.5rem;
+  font-family: Quicksand, Poppins, sans-serif;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.mission {
+  right: 0;
+  width: 100%;
+  background-color: #ec3f35;
+  padding: 1.5rem;
+  border-radius: 1rem 0 0 1rem;
+  color: white;
+  text-align: left;
+}
+
+.mission h3 {
+  font-family: Poppins, Quicksand, sans-serif;
+  font-size: 1.8rem;
+  margin-block-start: 0;
+  margin-block-end: 1rem;
+}
+
+.mission ul {
+  margin: 0;
+}
+
+.mission ul li {
+  font-family: Quicksand, Poppins, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}

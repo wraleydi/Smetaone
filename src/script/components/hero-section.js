@@ -25,7 +25,7 @@ class HeroSection extends HTMLElement {
         color: white;
         text-align: center;
         font-family: Poppins, sans-serif;
-        font-size: 1.5rem;
+        font-size: 2rem;
         position: relative; 
       }
 
