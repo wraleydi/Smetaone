@@ -14,10 +14,16 @@ body {
   margin: 0;
   padding: 0;
   font-family: Roboto, Quicksand, sans-serif;
+  background-color: rgb(245, 235, 235);
+}
+
+.container {
+  display: flex;
+  max-width: 1300px;
+  margin: auto;
 }
 
 .smetaone-section {
-  display: flex;
   padding: 3rem 3rem 0 0;
   background-color: #ec3f35;
 }
